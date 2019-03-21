@@ -10,7 +10,7 @@
         <title>Museum of Candy</title>
     </head>
     <body>
-        <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md" py-0 fixed-top>
+        <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
         <a href="" class="navbar-brand">CANDY</a> 
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
             <span class="navbar-toggle-icon"></span>
@@ -30,7 +30,7 @@
         </div>
         </nav>
 
-        <section class="container-fluid" px-0>
+        <section class="container-fluid px-0">
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div id="headingGroup" class="text-white text-center d-none d-lg-block mt-5">
@@ -44,12 +44,65 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="imgs\hand2.png"  class="img-fluid" alt="">
+                    <img src="imgs\hand2.png"  class="img-fluid" alt="Hand">
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid px-0">
+            <div class="row align-items-center content">
+                <div class="col-md-6 order-2 order-md-1">
+                    <img src="imgs/milk.png" alt="Milk" class="img-fluid">
+                </div>
+                <div class="col-md-6 text-center order-1 order-md-2">
+                    <div class="row justify-content-center">
+                        <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                            <h2>MUSEUM OF CANDY</h2>
+                    <img src="imgs/lolli_icon.png" alt="Lolli Icon" class="d-none d-lg-inline">
+                    <p class="lead">Sugar plum soufflé liquorice. Sesame snaps ice cream biscuit cake. Sugar plum chupa chups cheesecake pudding cake tiramisu lemon drops. Pudding pastry marshmallow. Bear claw chupa chups cheesecake gingerbread macaroon. Cookie tiramisu soufflé cake wafer muffin powder bear claw. Chocolate soufflé muffin pie. Tootsie roll pudding lemon drops croissant danish powder donut.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center content">
+                <div class="col-md-6 text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                            <h2>MUSEUM OF CANDY</h2>
+                    <img src="imgs/lolli_icon.png" alt="Lolli Icon" class="d-none d-lg-inline">
+                    <p class="lead">Cheesecake dragée powder apple pie. Marshmallow icing gummies gingerbread. Chupa chups fruitcake gummies chupa chups cotton candy. Donut gummi bears marshmallow. Dragée lollipop marshmallow candy marzipan macaroon. Cupcake danish liquorice.</p>
+                        </div>
+                    </div>
+                </div>
+                        <div class="col-md-6">
+                            <img src="imgs/gumball.png" alt="Gumball" class="img-fluid">
+                </div>
+            </div>
+            <div class="row align-items-center content">
+                <div class="col-md-6 order-2 order-md-1">
+                    <img src="imgs/sprinkles.png" alt="Milk" class="img-fluid">
+                </div>
+                <div class="col-md-6 text-center order-1 order-md-2">
+                    <div class="row justify-content-center">
+                        <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                            <h2>MUSEUM OF CANDY</h2>
+                    <img src="imgs/lolli_icon.png" alt="Lolli Icon" class="d-none d-lg-inline">
+                    <p class="lead">Fruitcake candy lollipop cupcake cake dessert. Macaroon candy tiramisu dessert. Fruitcake cotton candy donut pie gummies fruitcake icing. Jujubes sugar plum cookie powder tootsie roll. Tart jelly-o bonbon apple pie. Sweet roll apple pie wafer wafer tart tootsie roll fruitcake ice cream. Jujubes chocolate cake croissant. Chupa chups pastry muffin chocolate cake pie candy canes. Cotton candy donut cotton candy marzipan carrot cake.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </body>
+        <script>
+            $(function () {
+                $(document).scroll(function(){
+                    var $nav = $("#mainNavbar");
+                    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+                });
+            });
+        </script>
+        </body>
 </html>
